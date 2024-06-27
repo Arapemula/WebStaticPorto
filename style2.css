@@ -1,0 +1,132 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontak{
+    
+    background-color:#135D66;
+    border-radius: 20px;
+    justify-content: center;
+    width: 45vw;
+    height: 75vh;
+   
+}
+.contactt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.contact{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-data{
+    color: white;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+input{
+    width: 35vw;
+    border-radius: 100px;
+    height: 27px;
+    background-color: #E2E2E2;
+    border: 2px solid#135D66;
+
+}
+
+.input-group{
+    padding-left: 40px;
+
+}
+
+::placeholder{
+    padding: 20px;
+}
+
+.input-group > a{
+    background-color: white;
+    color: #0097B2;
+    padding: 5px 14px;
+    margin-left: 15vw;
+   
+    border: 2px  solid white;
+    border-radius: 200px;
+    
+
+}
+.submit {
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.masukan{
+    background-color: #77B0AA;
+    width: 100px;
+    border-radius: 20px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.container-blog{
+    background-color: #135D66;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    animation: content ease-in 2s; 
+
+}
+
+
+.poto{
+   margin-top: 10px;
+    border-radius: 20px;
+    top: 30px;
+    width: 15vw;
+    height: 20vh;
+}
+.explain{
+    color: white;
+    padding: 5px 10px;
+    font-size: 13px;
+    text-align: justify;
+}
+.tombol-projek{
+    width: 10vw;
+    height: 5vh;
+    margin-left: 8px;
+    background-color: #E3FEF7;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.bukak{
+    text-decoration: none;
+    color: #135D66;
+    font-weight: 500;
+}
+@keyframes content {
+    0% {
+        opacity: 0;
+        margin-top: 100px;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

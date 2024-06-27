@@ -1,0 +1,100 @@
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    
+    .logog{
+        width: 50px;
+        margin-left: 0;
+    }
+    #header-top{
+        width: 125%;
+    }
+    .opening{
+        width: 125%;
+        display: flex;
+        
+        flex-direction: column;
+    }
+    .nama{
+        margin-top: 100px;
+        display: inline;
+        margin-left: -35px;
+    }
+
+    .line{
+        font-size: 30px;
+        
+       
+    }
+    .potoarap{
+        top: 33px;
+        right: 45%;
+        width: 40vw;
+
+    }
+    .awan{
+        width: 100px;
+        top: 10px;
+        right: 140px;
+    }
+    .awan-bawah{
+        top: 90px;
+        right: 235px;
+       z-index: 5;
+    }
+    .bawah{
+        top: 100px;
+        right: 215px;
+    }
+    .awan-atas{
+        top: 45px;
+        width:40px ;
+        right: 260px;
+        z-index: 2;
+    }
+    .bundar {
+       
+        
+        right: 45%;
+        width: 40vw;
+
+    }
+
+    .navbar-toggle{
+        margin-right: 100px;
+        
+    }
+    .navbar-menu {
+       
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #004d4d;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}

@@ -1,0 +1,396 @@
+body{
+    background-color: #77B0AA;
+}
+
+img{
+    width: 90px;
+    margin-left: 30px;
+
+}
+#header-top{
+    background-color: #003C43;
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul{
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    margin-right: 30px;
+    
+}
+li{
+    margin: 10px;
+}
+
+.opening{
+    background-color: #135D66;
+    height: 70vh;
+    position: relative;
+}
+
+.opening::after{
+    content: "";
+    background-color: #135D66;
+    position: absolute;
+    bottom: -60px; 
+    border-radius: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10vw;
+    height: 20vh;
+    z-index: 0;
+}
+
+.panah{
+    position: absolute;
+    left: 47.8%;
+    transform: translateX(-50%);
+    bottom:  -60px;
+    z-index: 1;
+
+}
+
+.pINFO{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 50.5%;
+    transform: translateX(-50%);
+    z-index: 7;
+}
+.wrapper{
+    position: relative;
+    
+}
+
+.bundar {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    width: 25vw;
+    z-index: 4;
+    
+    animation: rotate 10s linear infinite; 
+   
+}
+.potoarap{
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    width: 25.3vw;
+    z-index: 5;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+.awan {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    width: 230px;
+    animation: goyang 4s ease-in-out infinite; 
+    z-index: 5;
+}
+
+.awan-bawah{
+    top: 195px;
+    right: 210px;
+   z-index: 5;
+}
+
+.bawah{
+    top: 185px;
+    right: 270px;
+    width: 210px;
+    z-index: 5;
+}
+
+.awan-atas{
+    top: 50px;
+    width: 130px;
+    right: 300px;
+    z-index: 2;
+}
+
+@keyframes goyang {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.panah-terbalik{
+    rotate: 180deg;
+    left: 40.5%;
+    transform: translateX(-50%);
+
+}
+
+.panah:hover{
+    cursor: pointer;
+}
+
+.nama {
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    row-gap: 0; 
+}
+
+.line {
+    font-size: 100px;
+    margin: 0; 
+    padding: 0; 
+    line-height: 0.8; 
+}
+
+.teks-gaya {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+#dynamic-text {
+    color: yellow; 
+}
+
+.blok{
+    background-color: #E3FEF7;
+    width: 80vw;
+    height: 50vh;
+    margin-left: 100px;
+    border-radius: 25px;
+}
+
+.icon{
+    width:20vw;
+    height: 20vh;
+    margin-left: 0;
+    
+}
+
+
+
+.icon svg{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.html:hover svg path{
+    cursor: pointer;
+    fill: #FF7F3E;
+}
+
+.svg-container {
+    position: relative;
+    display: inline-block;
+}
+.tooltip {
+    visibility: hidden;
+    background-color: gray;
+    color: #fff;
+    
+    text-align: justify;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 10;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray transparent transparent transparent;
+}
+
+
+.svg-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.css:hover svg path{
+    cursor: pointer;
+    fill: #4B70F5;
+}
+
+.js:hover svg path{
+    cursor: pointer;
+    fill: #FFC700;
+}
+.bootstrap:hover svg path{
+    cursor: pointer;
+    fill: #604CC3;
+}
+.sql:hover .sqlll{
+    
+    cursor: pointer;
+    fill: #1679AB;
+}
+.sql:hover .sqll{
+    
+    cursor: pointer;
+    fill: #5A639C;
+}
+.laravel:hover svg path{
+    cursor: pointer;
+    fill: #C80036;
+}
+.django:hover svg path{
+    cursor: pointer;
+    fill: #059212;
+}
+
+.container {
+    text-align: center;
+}
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+}
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.timeline div {
+    position: relative;
+    padding: 20px 40px;
+    margin: 0 10px;
+    color: white;
+    background: #0f5257;
+    border-radius: 10px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+.timeline div:nth-child(1) {
+    animation-delay: 0s;
+}
+.timeline div:nth-child(2)::before {
+    content: '→';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: white;
+    opacity: 0;
+    animation: fadeInArrow 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+.timeline div:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.timeline div:nth-child(3)::before {
+    content: '→';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: white;
+    opacity: 0;
+    animation: fadeInArrow 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+.timeline div:nth-child(3) {
+    animation-delay: 2.5s;
+}
+.timeline div span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.timeline div p {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInArrow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.connect{
+    font-family: 'League Spartan';
+    margin-left: 40px;
+    margin-top: 100px;
+    color: white;
+}
+
+.LOGOS{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+}
+.LOGOS svg{
+    width: 100%;
+    height: 100%;
+
+}
+
+
